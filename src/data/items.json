@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "picture":"../public/Sofa.png",
+        "picture":"Sofa.png",
         "name":"The Poplar suede sofa",
         "description":"A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
         "price":980,
@@ -15,7 +15,7 @@
       },
       {
         "id":2,
-        "picture":"../public/Chair.png",
+        "picture":"Chair.png",
         "name":"The Dandy chair",
         "description":"A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
         "price":250,
