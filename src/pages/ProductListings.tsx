@@ -7,7 +7,7 @@ import { useState} from "react"
 import useMediaQuery from '@/hooks/useMediaQuery'
 import { XMarkIcon } from "@heroicons/react/24/solid"
 import { Link } from 'react-router-dom'
-import PageHeader from '/Page Headers-2.png'
+import PageHeader from '@/assets/Page Headers-2.png'
 
 
 type ProductListingsType ={
