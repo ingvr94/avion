@@ -7,6 +7,7 @@ import { useState} from "react"
 import useMediaQuery from '@/hooks/useMediaQuery'
 import { XMarkIcon } from "@heroicons/react/24/solid"
 import { Link } from 'react-router-dom'
+import PageHeader from '../../public/Page Headers-2.png'
 
 
 type ProductListingsType ={
@@ -30,7 +31,9 @@ const ProductListings = ({categories,cost,designers,onFilterChange,modalActive,s
   return (
     <div className="container">
       <Navbar />
-      <div className=" bg-page-header  md:h-[209px] xs:h-[146px] xs:mt-[80px] md:mt-0 xs:pt-16 xs:pb-8 xs:px-[92px] md:pl-20 md:pt-[123px]">  
+      <div 
+      style={{backgroundImage:PageHeader}}
+      className="md:h-[209px] xs:h-[146px] xs:mt-[80px] md:mt-0 xs:pt-16 xs:pb-8 xs:px-[92px] md:pl-20 md:pt-[123px]">  
         <div className=" text-h1 font-clashdisplay  text-white">All products</div>
       </div>
       {isAboveMediumScreen ?
