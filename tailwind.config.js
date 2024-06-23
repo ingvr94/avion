@@ -33,7 +33,7 @@ export default {
       }
     },
     backgroundImage:{
-      'page-header':'url(@/assets/Page Headers-2.png)'
+      'page-header':'url(/Page Headers-2.png)'
     },
     screens:{
       xs:"390px",
