@@ -31,7 +31,8 @@ const ProductListings = ({categories,cost,designers,onFilterChange,modalActive,s
     <div className="container">
       <Navbar />
       <div 
-      className=" bg-page-header md:h-[209px] xs:h-[146px] xs:mt-[80px] md:mt-0 xs:pt-16 xs:pb-8 xs:px-[92px] md:pl-20 md:pt-[123px]">  
+      style={{backgroundImage:"url('/Page Headers-2.png')"}}
+      className=" md:h-[209px] xs:h-[146px] xs:mt-[80px] md:mt-0 xs:pt-16 xs:pb-8 xs:px-[92px] md:pl-20 md:pt-[123px]">  
         <div className=" text-h1 font-clashdisplay  text-white">All products</div>
       </div>
       {isAboveMediumScreen ?
