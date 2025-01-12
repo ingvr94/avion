@@ -18,6 +18,10 @@ function App() {
       dispatch(getTotals())
   },[cart,dispatch])
 
+  useEffect(()=>{
+
+  })
+
 const [state,setState]=useState({
   items:storeItems,
   filters:new Set()
@@ -118,7 +122,7 @@ const handleFilterChange=useCallback((event:React.ChangeEvent<HTMLInputElement>)
           <Route path="/about" element={<About />}/>
           <Route path="/productlistings" element={<ProductListings categories={categories} cost={cost} designers={designers} onFilterChange={handleFilterChange} modalActive={modalActive}
           setModalActive={setModalActive} resetFilter={resetFilter} items={state.items}/>}/>
-          <Route path="/listing/:id" element={<Listing />}/>
+          <Route path="/listing/:id" element={<Listing items={state.items}/>}/>
           <Route path="/cart" element={<ShoppingCart />}/>
         </Routes>
       </>

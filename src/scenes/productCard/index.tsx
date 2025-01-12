@@ -6,7 +6,7 @@ import useMediaQuery from '@/hooks/useMediaQuery'
 
 
 type ProductCardType={
-    product:ListingType
+    product:ListingType 
 }
 
 const ProductCard = ({product}:ProductCardType) => {

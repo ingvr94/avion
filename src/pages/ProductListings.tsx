@@ -97,6 +97,7 @@ const ProductListings = ({categories,cost,designers,onFilterChange,modalActive,s
                         &&
                       <Link to={`/listing/${e.id-1}`}>
                         <PopularProductsItem 
+                        key={e.id}
                         id={e.id}
                         picture={e.picture}
                         name={e.name}
@@ -149,6 +150,7 @@ const ProductListings = ({categories,cost,designers,onFilterChange,modalActive,s
                 &&
                 <Link to={`/listing/${e.id-1}`}>  
                   <NewCeramicsItem
+                  key={e.id}
                   id={e.id}
                   picture={e.picture}
                   name={e.name}
@@ -244,7 +246,8 @@ const ProductListings = ({categories,cost,designers,onFilterChange,modalActive,s
                     <button className="border-b-[1px] text-xl py-2" onClick={()=>{
                       items.sort((a,b)=>a.price-b.price)
                       setSorting(false)
-                      document.body.style.position=''}}>Increasing price</button>
+                      document.body.style.position=''
+                      }}>Increasing price</button>
                     <button className="border-b-[1px] text-xl pb-3" onClick={()=>{
                       items.sort((a,b)=>a.price-b.price).reverse()
                       setSorting(false)
